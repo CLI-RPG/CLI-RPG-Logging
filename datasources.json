@@ -1,0 +1,61 @@
+[
+	{
+		"id": 3,
+		"uid": "eddd012a-a716-4a6f-ad30-05fbc1852637",
+		"orgId": 1,
+		"name": "MongoDB_Auth",
+		"type": "grafana-mongodb-opensource-datasource",
+		"typeName": "MongoDB",
+		"typeLogoUrl": "public/plugins/grafana-mongodb-opensource-datasource/img/MongoDB_Gray_Logo_FullColor_RGB-01.jpg",
+		"access": "proxy",
+		"url": "localhost:3333",
+		"user": "",
+		"database": "",
+		"basicAuth": false,
+		"isDefault": false,
+		"jsonData": {
+			"mongodb_db": "auth",
+			"mongodb_url": "mongodb://barbie:barbie@mongo_auth:27017"
+		},
+		"readOnly": false
+	},
+	{
+		"id": 2,
+		"uid": "f42bd55e-2106-49a7-9d56-780b929332e7",
+		"orgId": 1,
+		"name": "MongoDB_BL",
+		"type": "grafana-mongodb-opensource-datasource",
+		"typeName": "MongoDB",
+		"typeLogoUrl": "public/plugins/grafana-mongodb-opensource-datasource/img/MongoDB_Gray_Logo_FullColor_RGB-01.jpg",
+		"access": "proxy",
+		"url": "localhost:3333",
+		"user": "",
+		"database": "",
+		"basicAuth": false,
+		"isDefault": false,
+		"jsonData": {
+			"mongodb_db": "Business",
+			"mongodb_url": "mongodb://root:example@mongo_bl:27017"
+		},
+		"readOnly": false
+	},
+	{
+		"id": 1,
+		"uid": "d2c5be7b-f316-45f4-bb08-dc0cf3b8124a",
+		"orgId": 1,
+		"name": "Prometheus",
+		"type": "prometheus",
+		"typeName": "Prometheus",
+		"typeLogoUrl": "public/app/plugins/datasource/prometheus/img/prometheus_logo.svg",
+		"access": "proxy",
+		"url": "http://prometheus:9090",
+		"user": "",
+		"database": "",
+		"basicAuth": false,
+		"isDefault": true,
+		"jsonData": {
+			"httpMethod": "POST"
+		},
+		"readOnly": false
+	}
+]

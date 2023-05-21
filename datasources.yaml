@@ -1,0 +1,21 @@
+apiVersion: 1
+
+datasources:
+  - name: MongoDB_Auth
+    type: grafana-mongodb-opensource-datasource
+    access: "proxy"
+    uid: eddd012a-a716-4a6f-ad30-05fbc1852637
+    url: localhost:3333
+    jsonData: {"mongodb_db": "auth","mongodb_url": "mongodb://barbie:barbie@mongo_auth:27017"}
+  - name: MongoDB_BL
+    type: grafana-mongodb-opensource-datasource
+    access: "proxy"
+    uid: f42bd55e-2106-49a7-9d56-780b929332e7
+    url: localhost:3333
+    jsonData: {"mongodb_db": "Business","mongodb_url": "mongodb://root:example@mongo_bl:27017"}
+  - name: Prometheus
+    type: prometheus
+    access: "proxy"
+    url: "http://prometheus:9090"
+    jsonData: {"httpMethod": "POST"}
+

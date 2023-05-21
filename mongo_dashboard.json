@@ -1,0 +1,172 @@
+{
+	"annotations": {
+	  "list": [
+		{
+		  "builtIn": 1,
+		  "datasource": {
+			"type": "grafana",
+			"uid": "-- Grafana --"
+		  },
+		  "enable": true,
+		  "hide": true,
+		  "iconColor": "rgba(0, 211, 255, 1)",
+		  "name": "Annotations & Alerts",
+		  "type": "dashboard"
+		}
+	  ]
+	},
+	"editable": true,
+	"fiscalYearStartMonth": 0,
+	"graphTooltip": 0,
+	"id": 1,
+	"links": [],
+	"liveNow": false,
+	"panels": [
+	  {
+		"datasource": {
+		  "type": "grafana-mongodb-opensource-datasource",
+		  "uid": "c0fbb05c-e958-4195-92ed-82219867afb9"
+		},
+		"fieldConfig": {
+		  "defaults": {
+			"color": {
+			  "mode": "thresholds"
+			},
+			"mappings": [],
+			"thresholds": {
+			  "mode": "absolute",
+			  "steps": [
+				{
+				  "color": "green",
+				  "value": null
+				},
+				{
+				  "color": "red",
+				  "value": 80
+				}
+			  ]
+			}
+		  },
+		  "overrides": []
+		},
+		"gridPos": {
+		  "h": 7,
+		  "w": 12,
+		  "x": 0,
+		  "y": 0
+		},
+		"id": 2,
+		"options": {
+		  "colorMode": "value",
+		  "graphMode": "area",
+		  "justifyMode": "auto",
+		  "orientation": "auto",
+		  "reduceOptions": {
+			"calcs": [
+			  "lastNotNull"
+			],
+			"fields": "",
+			"values": false
+		  },
+		  "textMode": "auto"
+		},
+		"pluginVersion": "9.5.2",
+		"targets": [
+		  {
+			"datasource": {
+			  "type": "grafana-mongodb-opensource-datasource",
+			  "uid": "c0fbb05c-e958-4195-92ed-82219867afb9"
+			},
+			"rawQuery": true,
+			"refId": "A",
+			"target": "db.client.aggregate(\n  [\n    {\n      $count: \"documents\"\n    }\n  ]\n)",
+			"type": "timeserie"
+		  }
+		],
+		"title": "Panel Title",
+		"type": "stat"
+	  },
+	  {
+		"datasource": {
+		  "type": "grafana-mongodb-opensource-datasource",
+		  "uid": "d113f7ba-ab78-4e54-a16a-518c5d5b7fe9"
+		},
+		"fieldConfig": {
+		  "defaults": {
+			"color": {
+			  "mode": "thresholds"
+			},
+			"mappings": [],
+			"thresholds": {
+			  "mode": "absolute",
+			  "steps": [
+				{
+				  "color": "green",
+				  "value": null
+				},
+				{
+				  "color": "red",
+				  "value": 80
+				}
+			  ]
+			}
+		  },
+		  "overrides": []
+		},
+		"gridPos": {
+		  "h": 7,
+		  "w": 12,
+		  "x": 12,
+		  "y": 0
+		},
+		"id": 1,
+		"options": {
+		  "colorMode": "value",
+		  "graphMode": "area",
+		  "justifyMode": "auto",
+		  "orientation": "auto",
+		  "reduceOptions": {
+			"calcs": [
+			  "lastNotNull"
+			],
+			"fields": "",
+			"values": false
+		  },
+		  "textMode": "auto"
+		},
+		"pluginVersion": "9.5.2",
+		"targets": [
+		  {
+			"datasource": {
+			  "type": "grafana-mongodb-opensource-datasource",
+			  "uid": "d113f7ba-ab78-4e54-a16a-518c5d5b7fe9"
+			},
+			"hide": false,
+			"rawQuery": true,
+			"refId": "Doc_count",
+			"target": "db.Sessions.aggregate(\n  [\n    {\n      $count: \"documents\"\n    }\n  ]\n)",
+			"type": "table"
+		  }
+		],
+		"title": "Active sessions",
+		"type": "stat"
+	  }
+	],
+	"refresh": "5s",
+	"schemaVersion": 38,
+	"style": "dark",
+	"tags": [],
+	"templating": {
+	  "list": []
+	},
+	"time": {
+	  "from": "now-6h",
+	  "to": "now"
+	},
+	"timepicker": {},
+	"timezone": "",
+	"title": "Mongo_stats",
+	"uid": "db30a8d3-6033-4378-9fa4-3aed3a9ef327",
+	"version": 7,
+	"weekStart": ""
+  }
