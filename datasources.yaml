@@ -18,4 +18,5 @@ datasources:
     access: "proxy"
     url: "http://prometheus:9090"
     jsonData: {"httpMethod": "POST"}
+    uid: abdeab49-7028-4d06-b9f2-868b4b6fe0d3
 

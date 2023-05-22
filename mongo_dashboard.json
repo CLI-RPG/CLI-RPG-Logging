@@ -25,7 +25,7 @@
 	  {
 		"datasource": {
 		  "type": "grafana-mongodb-opensource-datasource",
-		  "uid": "c0fbb05c-e958-4195-92ed-82219867afb9"
+		  "uid": "eddd012a-a716-4a6f-ad30-05fbc1852637"
 		},
 		"fieldConfig": {
 		  "defaults": {
@@ -75,7 +75,7 @@
 		  {
 			"datasource": {
 			  "type": "grafana-mongodb-opensource-datasource",
-			  "uid": "c0fbb05c-e958-4195-92ed-82219867afb9"
+			  "uid": "eddd012a-a716-4a6f-ad30-05fbc1852637"
 			},
 			"rawQuery": true,
 			"refId": "A",
@@ -89,7 +89,7 @@
 	  {
 		"datasource": {
 		  "type": "grafana-mongodb-opensource-datasource",
-		  "uid": "d113f7ba-ab78-4e54-a16a-518c5d5b7fe9"
+		  "uid": "f42bd55e-2106-49a7-9d56-780b929332e7"
 		},
 		"fieldConfig": {
 		  "defaults": {
@@ -139,7 +139,7 @@
 		  {
 			"datasource": {
 			  "type": "grafana-mongodb-opensource-datasource",
-			  "uid": "d113f7ba-ab78-4e54-a16a-518c5d5b7fe9"
+			  "uid": "f42bd55e-2106-49a7-9d56-780b929332e7"
 			},
 			"hide": false,
 			"rawQuery": true,
